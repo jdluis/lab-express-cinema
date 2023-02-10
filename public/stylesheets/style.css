@@ -79,3 +79,25 @@ a {
 .cards-container .card-item a {
   text-decoration: underline;
 }
+
+/*Movie by Id */
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin: 40px;
+  gap: 50px;
+}
+
+.movie-text-container {
+  max-width: 500px;
+}
+
+.movie-text-container a{
+  text-decoration: underline;
+}
+
+.movie-text-container h1{
+  margin: 10px 0;
+}

@@ -1,21 +1,21 @@
-<div>
+<div class="movie-container">
   <div>
-    <img src={{this.getMovie.image}} alt="{{this.getMovie.title}} poster" />
+    <img src={{this.movie.image}} alt="{{this.movie.title}} poster" />
   </div>
-  <div>
+  <div class="movie-text-container">
     <a href="/">Go back</a>
-    <h1>{{this.getMovie.title}}</h1>
-    <h3>{{this.getMovie.director}}</h3>
+    <h1>{{this.movie.title}}</h1>
+    <h3>{{this.movie.director}}</h3>
     <h4>Stars</h4>
     <ul>
-      {{#each this.getMovie.stars}}
+      {{#each this.movie.stars}}
         <li>{{this}}</li>
       {{/each}}
     </ul>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum,
       possimus illum recusandae ut totam aut nostrum et quas. Doloremque!</p>
-    <p>{{#each this.getMovie.showtimes}}
-        <li>{{this}}</li>
+    <p>{{#each this.movie.showtimes}}
+        {{this}} |
       {{/each}}</p>
   </div>
 </div>
