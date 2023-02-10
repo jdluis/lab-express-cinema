@@ -1,0 +1,21 @@
+<div>
+  <div>
+    <img src={{this.getMovie.image}} alt="{{this.getMovie.title}} poster" />
+  </div>
+  <div>
+    <a href="/">Go back</a>
+    <h1>{{this.getMovie.title}}</h1>
+    <h3>{{this.getMovie.director}}</h3>
+    <h4>Stars</h4>
+    <ul>
+      {{#each this.getMovie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum,
+      possimus illum recusandae ut totam aut nostrum et quas. Doloremque!</p>
+    <p>{{#each this.getMovie.showtimes}}
+        <li>{{this}}</li>
+      {{/each}}</p>
+  </div>
+</div>
