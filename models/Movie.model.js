@@ -5,13 +5,11 @@ const MoviesSchema = new Schema(
   {
     title: {
       type: String,
-      required: false,
       unique: true,
     },
     director: {
       type: String,
       required: true,
-      unique: false,
     },
     image: {
       type: String,
@@ -20,15 +18,13 @@ const MoviesSchema = new Schema(
     stars: [
       {
         type: String,
-        required: false,
       },
     ],
     showtimes: [
-        {
-          type: String,
-          required: false,
-        },
-      ],
+      {
+        type: String,
+      },
+    ],
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`
