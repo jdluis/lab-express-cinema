@@ -93,7 +93,7 @@ const MovieModel = require("../models/Movie.model.js");
 
 async function insertData() {
   try {
-    const response = await MovieModel.insertMany(movies);
+    await MovieModel.insertMany(movies);
     console.log("Data of Movies add correctly");
   } catch (error) {
     console.log(error);
